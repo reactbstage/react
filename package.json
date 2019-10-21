@@ -4,9 +4,9 @@
   "description": "",
   "private": true,
   "scripts": {
-    "build": "webpack --config ./config/webpack.dev.js",
-    "prod": "webpack --config ./config/webpack.prod.js",
-    "start": "webpack-dev-server --open --config ./config/webpack.dev.js"
+    "build": "webpack --config ./webpack.config.js",
+    "start": "webpack-dev-server --open --port 3000 --contentBase src --hot --inline",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +29,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
+    "antd": "^3.24.2",
     "lodash": "^4.17.11",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
